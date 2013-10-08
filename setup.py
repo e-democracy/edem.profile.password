@@ -5,9 +5,9 @@ from version import get_version
 
 version = get_version()
 
-setup(name='edem.group.messages.post',
+setup(name='edem.profile.password',
     version=version,
-    description="Customized version of GroupServer's topics digest for E-Democracy",
+    description="Customized Change Password page",
     long_description=open("README.txt").read() + "\n" +
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers for values 
@@ -28,13 +28,13 @@ setup(name='edem.group.messages.post',
     url='http://www.e-democracy.org/',
     license='GPL 3',
     packages=find_packages(exclude=['ez_setup']),
-    namespace_packages=['edem', 'edem.group', 'edem.group.messages'], 
+    namespace_packages=['edem', 'edem.profile'], 
     include_package_data=True,
-    zip_safe=True,
+    zip_safe=False,
     install_requires=[
         'setuptools',
         'gs.skin.ogn.edem',
-        'gs.group.messages.topicsdigest',
+        'gs.profile.password',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
