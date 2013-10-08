@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="groupserver">
+
+  <browser:menuItems
+    menu="user_profile_menu" 
+    for="Products.CustomUserFolder.interfaces.ICustomUser" 
+    layer="gs.skin.ogn.edem.interfaces.IEDemSkin">
+    <browser:menuItem 
+      action="password.html" 
+      title="Change Password" 
+      description="Change the password you use to log in" 
+      order="5" 
+      permission="zope2.ManageProperties"/>
+  </browser:menuItems>
+</configure>
